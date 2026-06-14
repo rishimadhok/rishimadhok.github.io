@@ -1,8 +1,8 @@
-# rishimadhok.io
+# rishimadhok.ai
 
 Personal site of **Rishi Madhok** - CEO & Co-Founder of [TerraByte](https://terrabyte.ai), building the Earth search engine.
 
-**Live:** https://rishimadhok.github.io/
+**Live:** https://rishimadhok.ai (custom domain) · https://rishimadhok.github.io
 
 ## About
 
@@ -37,6 +37,8 @@ Hosted on **GitHub Pages** from the `master` branch (root). Pushing to `master` 
 ```bash
 git push origin master
 ```
+
+Custom domain: **rishimadhok.ai** (registered at Porkbun), set via the `CNAME` file in the repo root. Apex DNS uses GitHub Pages A/AAAA records; `www` is a CNAME to `rishimadhok.github.io`.
 
 ## Notes
 
