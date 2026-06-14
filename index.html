@@ -1,459 +1,639 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<html lang="en">
 <head>
-    <title>Rishi Madhok</title>
-    <!-- Meta -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico">  
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-    
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/modern.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head> 
+    <title>Rishi Madhok - CEO &amp; Co-Founder, TerraByte</title>
+    <meta name="description" content="Rishi Madhok is the CEO & Co-Founder of TerraByte, building the Earth search engine - geospatial foundation models that let anyone analyze the live planet in natural language. Previously computer vision at Microsoft, Uber ATG, and Carnegie Mellon.">
+    <meta name="author" content="Rishi Madhok">
+    <meta name="theme-color" content="#02040a">
+    <meta name="color-scheme" content="dark">
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rishi Madhok - CEO & Co-Founder, TerraByte">
+    <meta property="og:description" content="CEO & Co-Founder of TerraByte, building the Earth search engine. Computer-vision researcher turned founder.">
+    <meta property="og:url" content="https://rishimadhok.io/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Rishi Madhok - CEO & Co-Founder, TerraByte">
+    <meta name="twitter:description" content="CEO & Co-Founder of TerraByte, building the Earth search engine.">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="canonical" href="https://rishimadhok.io/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap">
+    <link rel="stylesheet" href="assets/css/site.css">
+</head>
 <body>
-    <div class="wrapper">
-        <div class="sidebar-wrapper">
-            <div class="profile-container">
-                <img class="profile" src="assets/images/fall.png" alt="" width="200px"/>
-                <h1 class="name">Rishi Madhok</h1>
-                <h3 class="tagline">Grad Student at Carnegie Mellon University. A Computer Vision and Machine Learning enthusiast.</h3>
-            </div><!--//profile-container-->
+    <!-- Animated space backdrop -->
+    <div class="backdrop" aria-hidden="true">
+        <div class="stars"></div>
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="grid"></div>
+    </div>
 
-            <a href="https://clustrmaps.com/site/1agdp" title="Visit tracker"><img style="display: none;" src="//www.clustrmaps.com/map_v2.png?d=0Om9tXrLa1aBaJtGVbJRZe67GRgXa1_jCbE5lUkhzd4&cl=ffffff"></a>
+    <!-- Header -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a class="brand" href="#top" aria-label="Rishi Madhok - home">
+                <span class="brand-mark" aria-hidden="true">RM</span>
+                <span class="brand-name">Rishi Madhok</span>
+            </a>
+            <nav class="nav" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#work">Work</a>
+                <a href="#publications">Publications</a>
+                <a href="#contact" class="nav-cta">Contact</a>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#work">Work</a>
+            <a href="#publications">Publications</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-            <div class="container-block">
-              <h2 class="container-block-title">Homepage Resources</h2>
-              <div class="item">
-                <ul class="list-unstyled contact-list">
-                  <!-- <li><i class="fa fa-archive"></i><a href="#">Publications</a></li> -->
-                  <!-- <li><i class="fa fa-line-chart"></i><a href="research.html" target="_blank">Research Projects</a></li> -->
-                  <li><i class="fa fa-folder-open-o"></i><a href="https://drive.google.com/open?id=1K9JlFkcaE5q5Zbqq4jI56LOWZfaeUkRX" target="_blank">Curriculum Vitae</a></li>
-                </ul>
-              </div><!--//item-->
-            </div>
-            
-            <div class="contact-container container-block">
-                <h2 class="container-block-title">On the Internet</h2>
-                <ul class="list-unstyled contact-list">
-                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto: rmadhok@cs.cmu.edu">rmadhok@cs.cmu.edu</a></li>
-                    <!-- <li class="phone"><i class="fa fa-phone"></i><a href="tel:04126086126">+1(412)608-6126</a></li> -->
-                    <li class="website"><i class="fa fa-globe"></i><a href="http://rishimadhok.io/" target="_blank">rishimadhok.io</a></li>
-                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/rishi-madhok-91663b82/" href="#" target="_blank">@rishi-madhok</a></li>
-                    <li class="google"><i class="fa fa-google"></i><a href="https://scholar.google.com/citations?user=1fX86jsAAAAJ&hl=en" target="_blank">Scholar Profile</a></li>
-                    <li class="github"><i class="fa fa-github"></i><a href="https://github.com/rishimadhok" target="_blank">@rishimadhok</a></li>
-                    <li class="facebook"><i class="fa fa-facebook"></i><a href="https://www.facebook.com/96rishi" target="_blank">@96rishi</a></li>
-                </ul>
-            </div><!--//contact-container-->
-            <!-- <div class="education-container container-block">
-                <h2 class="container-block-title">Education</h2>
-                <div class="item">
-                    <h4 class="degree">MS in Computer Vision</h4>
-                    <h5 class="meta">Carnegie Mellon University</h5>
-                    <div class="time">2018 - 2019</div> -->
-                <!-- </div>//item -->
-                <!-- <div class="item">
-                    <h4 class="degree">B.Tech. in Computer Engineering</h4>
-                    <h5 class="meta">Delhi Technological University</h5>
-                    <div class="time">2014 - 2018</div>
-                </div> --><!--//item-->
-            <!-- </div>//education-container -->
-            
-            <div class="languages-container container-block">
-                <h2 class="container-block-title">Languages</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>Hindi <span class="lang-desc">(Native)</span></li>
-                    <li>English <span class="lang-desc">(Professional)</span></li>
-                    <!-- <li>Spanish <span class="lang-desc">(Professional)</span></li> -->
-                </ul>
-            </div><!--//interests-->
-            
-            <div class="interests-container container-block">
-                <h2 class="container-block-title">Interests</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>Fitness Enthusiast</li>
-                    <li>Golfer</li>
-                    <li>Cooking</li>
-                    <li>Drummer</li>
-                </ul>
-            </div><!--//interests-->
-            
-        </div><!--//sidebar-wrapper-->
-        
-        <div class="main-wrapper">
-            
-            <section class="section experiences-section">
-                <h2 class="section-title"><i class="fa fa-university"></i>Education</h2>
-
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <div style="float:left">
-                                <img src="assets/images/cmu2.png" style="height:38px; margin-right:10px; ">
-                            </div>
-                            <h3 class="job-title">Carnegie Mellon University</h3>
-                            <div class="time">Aug 2018 - December 2019</div>
-                            <div class="company">Masters of Science, Computer Vision | CGPA: 4.17 / 4.33 </div>
-                        </div><!--//upper-row-->
-                        
-                    </div><!--//meta-->
-                    <div class="details">
-                    <p>Relevant Courses: Geometric Based Methods for Vision (16-822), Advanced Multimodal Machine Learning (11-777), Visual Learning and Recognition (16-824), Robot Localization and Mapping (16-833) Computer Vision (16-720), Introduction to Machine Learning (10-601), Mathematical Fundamentals for Robotics (16-811)</p>
-                    </div><!--//details-->
-                </div><!--//item-->
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <div style="float:left">
-                                <img src="assets/images/dtu.png" style="height:38px; margin-right:10px; ">
-                            </div>
-                            <h3 class="job-title">Delhi Technological University</h3>
-                            <div class="time">Aug 2014 - May 2018</div>
-                            <div class="company">Bachelors of Technology, Computer Science and Engineering | CGPA: 9.368 / 10</div>
-                        </div><!--//upper-row-->
-                    </div><!--//meta-->
-                    <div class="details">
-                    <p>Relevant Courses: Artificial Intelligence, Neural Networks, Data Warehousing and Data Mining, Data Structures and Algorithms</p>
-                    </div><!--//details-->
-                </div><!--//item-->
-                
-            </section><!--//section-->
-            
-            <section class="section experiences-section">
-                <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
-
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <div style="float:left">
-                                <img src="assets/images/microsoft.png" style="height:38px; margin-right:10px; ">
-                            </div>
-                            <h3 class="job-title">Microsoft</h3>
-                            <div class="time">February 2020 - Present</div>
-                            <div class="company">Senior Applied Science Manager</div>
-                        </div><!--//upper-row-->
-                        
-                    </div><!--//meta-->
-                    <div class="details">
-                    <p> I oversee the development of object detection, semantic segmentation, and tracking models for federal customers using aerial/satellite imagery. We collaborate closely with clients to understand their needs, design tailored models, and employ the latest computer vision techniques. Our goal is to provide accurate and reliable insights from visual data to aid their decision-making processes.</p>
-                    
-                    </div><!--//details-->
-                </div><!--//item-->
-
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <div style="float:left">
-                                <img src="assets/images/cmu2.png" style="height:38px; margin-right:10px; ">
-                            </div>
-                            <h3 class="job-title">Carnegie Mellon University, Robotics Institute</h3>
-                            <div class="time">August 2019 - December 2019</div>
-                            <div class="company">Graduate Teaching Assistant</div>
-                        </div><!--//upper-row-->
-                        
-                    </div><!--//meta-->
-                    <div class="details">
-                    <p>TA for the Graduate Computer Vision course 16-720 taught by Prof. John Galeotti. Responsibilities include preparing assignments, grading, and holding office hours for students.</p>
-                    
-                    </div><!--//details-->
-                </div><!--//item-->
-
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <div style="float:left">
-                                <img src="assets/images/uber.jpg" style="height:38px; margin-right:10px; ">
-                            </div>
-                            <h3 class="job-title">Uber Advanced Technologies Group</h3>
-                            <div class="time">May 2018 - Present</div>
-                            <div class="company">Perception Intern | Advisor: Mr. Warren Smith</div>
-                        </div><!--//upper-row-->
-                        
-                    </div><!--//meta-->
-                    <div class="details">
-                    <p>Perception Intern at Uber Advanced Technologies Group (https://www.uber.com/info/atg/), Self Driving Division of Uber.</p>
-                    <p>Built a model to characterize LiDAR performance and identify key factors that contribute to detector performance and then use that model to drive decision making about what specifications are important in next-gen.</p>
-                    <p>Successfully tested transfer learning approaches so that models can be re-used across LiDARs with different beam spacings and different scanning patterns.</p>
-                    
-                    </div><!--//details-->
-                </div><!--//item-->
-
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <div style="float:left">
-                                <img src="assets/images/cmu2.png" style="height:38px; margin-right:10px; ">
-                            </div>
-                            <h3 class="job-title">Carnegie Mellon University, Robotics Institute</h3>
-                            <div class="time">Jan 2018 - May 2018</div>
-                            <div class="company">Graduate Teaching Assistant</div>
-                        </div><!--//upper-row-->
-                        
-                    </div><!--//meta-->
-                    <div class="details">
-                    <p>TA for the Graduate Computer Vision course 16-720 taught by Prof. Srinivasa Narasimhan. Responsibilities include preparing assignments, grading, and holding office hours for students.</p>
-                    
-                    </div><!--//details-->
-                </div><!--//item-->
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <div style="float:left">
-                                <img src="assets/images/cmu2.png" style="height:38px; margin-right:10px; ">
-                            </div>
-                            <h3 class="job-title">Carnegie Mellon University, Computer Science Department</h3>
-                            <div class="time">June - August 2018</div>
-                            <div class="company">Visiting Research Scholar | Advisor: Prof. Dave Touretzky</div>
-                        </div><!--//upper-row-->
-                        
-                    </div><!--//meta-->
-                    <div class="details">
-                    <p>Developed a multi-camera/multi-robot facility for Cozmo, an autonomous robot, by repurposing old phones to act as
-                        perched cameras.</p>
-                    <p>Performed Camera calibration and worked on SLAM. Created an Independent server which shares a Shared World Map with its Clients (Robots) helping them to better path plan and navigate.</p>
-                    
-                    </div><!--//details-->
-                </div><!--//item-->
-
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <div style="float:left">
-                                <img src="assets/images/ibm.jpeg" style="height:38px; margin-right:10px; ">
-                            </div>
-                            <h3 class="job-title">IBM Research Labs, New Delhi, India</h3>
-                            <div class="time">June - August 2017</div>
-                            <div class="company">Research Intern | Manager: Dr. Sameep Mehta</div>
-                        </div><!--//upper-row-->
-                        
-                    </div><!--//meta-->
-                    <div class="details">
-                    <p>Worked on contextual in-video advertising project which helps a potential advertiser to advertise his/her brand
-                        in a contextually relevant video and at the least intrusive position in that video.</p>
-                    <p>Created a context aware ad recommendation/ insertion system using multi-modal analytics through
-                        semantic understanding of video content.</p>
-                    
-                    </div><!--//details-->
-                </div><!--//item-->
-
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <div style="float:left">
-                                <img src="assets/images/shop.png" style="height:38px; width:61px; margin-right:0px; ">
-                            </div>
-                            <h3 class="job-title">Shopclues (an E-Commerce Marketplace), Gurugram, India</h3>
-                            <div class="time">June - August 2016</div>
-                            <div class="company">Software Development Intern</div>
-                        </div><!--//upper-row-->
-                        
-                    </div><!--//meta-->
-                    <div class="details">
-                    <p>Handled the notification module in Shopclues’s Product of Sale (POS) app by integrating Firebase Cloud
-                        Messaging and Firebase Notifications.</p>
-                    <p>Integrated Firebase Analytics in the application to log important events.</p>
-                    
-                    </div><!--//details-->
-                </div><!--//item-->
-
-
-                
-            </section><!--//section-->
-
-            <section class="section projects-section">
-                <h2 class="section-title"><i class="fa fa-archive"></i>Publications</h2>
-                <div>
-                    <ul>
-
-                    <li> <a href="assets/images/An Extensible Multi-Sensor Fusion Framework for 3D Imaging.pdf" target="_blank">An Extensible Multi-Sensor Fusion Framework for 3D Imaging</a><br/>
-                        Talha Ahmed Siddiqui, <u>Rishi Madhok</u>, Matthew O’Toole <br />
-                        <a href="http://cvpr2020.thecvf.com/" target="_blank">IEEE Conference on Computer Vision and Pattern Recognition (CVPR 2020), WAD Workshop</a>
-                    </li>
-                    <br>
-
-                    <li> <a href="https://arxiv.org/abs/1808.07507" target="_blank">Video Jigsaw: Unsupervised Learning of Spatiotemporal Context for Video Action Recognition</a><br/>
-                        Unaiza Ahsan, <u>Rishi Madhok</u>, Irfan Essa <br />
-                        <a href="http://cvpr2019.thecvf.com/" target="_blank">IEEE Conference on Computer Vision and Pattern Recognition (CVPR 2019), LUV Workshop</a>
-                    </li>
-                    <br>
-                    <li> <a href="https://arxiv.org/abs/1808.07507" target="_blank">Video Jigsaw: Unsupervised Learning of Spatiotemporal Context for Video Action Recognition</a><br/>
-                        Unaiza Ahsan, <u>Rishi Madhok</u>, Irfan Essa <br />
-                        <a href="http://wacv19.wacv.net/" target="_blank">IEEE Winter Conference on Applications of Computer Vision (WACV), 2019</a>
-                    </li>
-                    <br>
-                    <li> <a href="assets/images/Semantic Understanding for Contextual In-Video Advertising.pdf" target="_blank">Semantic Understanding for Contextual In-Video Advertising</a><br/>
-                        <u>Rishi Madhok</u>, Shashank Mujumdar, Nitin Gupta, Sameep Mehta <br />
-                        <a href="https://aaai.org/Conferences/AAAI-18/" target="_blank">AAAI Conference on Artificial Intelligence, 2018 </a>
-                    </li>
-                    <br>
-                    <li> <a href="assets/images/Proposing Contextually Relevant Quotes for Images.pdf" target="_blank">Proposing Contextually Relevant Quotes for Images</a><br/>
-                        Shivali Goel, <u>Rishi Madhok</u>, Shweta Garg <br />
-                        <a href="http://www.ecir2018.org/" target="_blank">European Conference on Information Retrieval (ECIR), 2018 </a>
-                    </li>
-                    <br>
-                    <li> <a href="assets/images/Content Driven Enrichment of Formal Text using Concept Definitions and Applications.pdf" target="_blank">Content Driven Enrichment of Formal Text Using Concept Definitions and Applications</a><br/>
-                        Abhinav Jain, Shashank Mujumdar, Nitin Gupta, Sameep Mehta, <u>Rishi Madhok</u><br/>
-                        <a href="https://ht.acm.org/ht2018/" target="_blank">ACM Conference on Hypertext and Social Media (HT), 2018 </a>
-                    </li>
-                    <br>
-                    <li> <a href="assets/images/SentiMozart-Music Generation Based on Emotions.pdf" target="_blank">SentiMozart: Music Generation Based on Emotions</a><br/>
-                        <u>Rishi Madhok</u>, Shivali Goel, Shweta Garg <br />
-                        <a href="http://www.icaart.org/?y=2018" target="_blank">International Conference on Agents and Artificial Intelligence (ICAART), 2018 </a>
-                    </li>
+    <main id="top">
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <div class="container hero-inner">
+                <div class="hero-content" data-reveal>
+                    <p class="eyebrow"><span class="pulse" aria-hidden="true"></span>CEO &amp; Co-Founder · TerraByte</p>
+                    <h1 class="hero-title">Rishi&nbsp;Madhok</h1>
+                    <p class="hero-lede">
+                        I'm building <a href="https://terrabyte.ai" target="_blank" rel="noopener" class="link-accent">TerraByte</a> - the
+                        <span class="highlight">Earth search engine</span>. Geospatial foundation models that
+                        let anyone analyze the live planet in plain language.
+                    </p>
+                    <p class="hero-sub">
+                        Computer-vision researcher turned founder. Previously building satellite &amp;
+                        aerial perception at Microsoft, Uber ATG, and Carnegie Mellon's Robotics Institute.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="https://terrabyte.ai" target="_blank" rel="noopener">
+                            Visit TerraByte
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                        </a>
+                        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+                    </div>
+                    <ul class="hero-links" aria-label="Profiles">
+                        <li><button type="button" class="email-trigger" data-email aria-label="Email me">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        </button></li>
+                        <li><a href="https://www.linkedin.com/in/rishi-madhok-91663b82/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                        </a></li>
+                        <li><a href="https://x.com/rishi_madhok" target="_blank" rel="noopener" aria-label="X (formerly Twitter)">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a></li>
+                        <li><a href="https://github.com/rishimadhok" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.6 8.2 11.16.6.11.82-.25.82-.56v-2c-3.34.71-4.04-1.58-4.04-1.58-.55-1.36-1.33-1.73-1.33-1.73-1.09-.73.08-.71.08-.71 1.2.08 1.84 1.21 1.84 1.21 1.07 1.8 2.81 1.28 3.5.98.1-.77.42-1.28.76-1.58-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.13-.3-.54-1.52.11-3.16 0 0 1.01-.32 3.3 1.21a11.6 11.6 0 0 1 6.01 0c2.28-1.53 3.29-1.21 3.29-1.21.65 1.64.24 2.86.12 3.16.77.83 1.23 1.88 1.23 3.17 0 4.53-2.81 5.53-5.49 5.82.43.37.82 1.1.82 2.22v3.29c0 .31.21.68.83.56A12.02 12.02 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z"/></svg>
+                        </a></li>
+                        <li><a href="https://scholar.google.com/citations?user=1fX86jsAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.77A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.27L24 9.5z"/></svg>
+                        </a></li>
                     </ul>
                 </div>
-            </section>
-            
-            <section class="section projects-section">
-                <h2 class="section-title"><i class="fa fa-archive"></i>Research and Projects</h2>
+                <div class="hero-portrait" data-reveal>
+                    <div class="portrait-ring">
+                        <img src="assets/images/rishi-2026.png" alt="Rishi Madhok" width="320" height="320">
+                    </div>
+                    <div class="portrait-badge">
+                        <img src="assets/images/terrabyte.svg" alt="" aria-hidden="true">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <div class="item">
-                    <span class="project-title">Sensor Fusion with Single-Photon Detectors | Advisor: Prof. Matthew O’Toole</a></span>
-                    <span class="project-tagline">
-                      <ul>
-                        <li>
-                          Explored and developed a suite of sensor fusion techniques around an emerging sensing technology known as a single-photon avalanche diode, or SPAD.
-                        </li>
-                        <li>
-                          Developed novel sensor fusion algorithm to fuse input data from Single Photon LiDARs, Stereo Camera Pair and RADARs.
-                        </li>
-                        <li>
-                          Proposed a solution which forms an intermediate cost volume representation from different sensors that when passed through deep neural network (PSM-Net), estimates better disparity and depth information of the scene.
-                        </li>
-                      </ul>
-                    </span>
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="container">
+                <p class="section-eyebrow" data-reveal>About</p>
+                <div class="about-grid">
+                    <div class="about-body" data-reveal>
+                        <p class="about-lead">
+                            I'm a computer-vision researcher turned founder. Today I lead
+                            <a href="https://terrabyte.ai" target="_blank" rel="noopener" class="link-accent">TerraByte</a>,
+                            where we're building the Earth search engine - geospatial foundation models and a
+                            natural-language interface that make satellite imagery as queryable as the web.
+                        </p>
+                        <p>
+                            Before co-founding TerraByte, I spent nearly six years at Microsoft - rising from applied
+                            scientist to Principal Applied Science Manager, where I tech-led AI for the Microsoft
+                            Planetary Computer Pro platform and built its first geospatial foundation model and GenAI
+                            analytics layer. Earlier I led object-detection, segmentation, and tracking models on aerial
+                            and satellite imagery for federal customers. I hold an MS in Computer Vision from Carnegie
+                            Mellon's Robotics Institute, and my research spans computer vision and geospatial AI - with
+                            work at CVPR, ICLR, NeurIPS, AAAI, and IJCV, plus several granted-and-pending patents.
+                        </p>
+                    </div>
+                    <aside class="about-side" data-reveal>
+                        <div class="side-card">
+                            <h3>Currently</h3>
+                            <ul class="side-list">
+                                <li><span>CEO &amp; Co-Founder</span> TerraByte</li>
+                                <li><span>Focus</span> Geospatial foundation models</li>
+                                <li><span>Based</span> San Francisco Bay Area</li>
+                            </ul>
+                        </div>
+                        <div class="side-card">
+                            <h3>Off the clock</h3>
+                            <ul class="tag-row">
+                                <li>Fitness</li>
+                                <li>Golf</li>
+                                <li>Cooking</li>
+                                <li>Drums</li>
+                            </ul>
+                            <h3 class="side-subhead">Languages</h3>
+                            <ul class="tag-row">
+                                <li>Hindi <small>· Native</small></li>
+                                <li>English <small>· Professional</small></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="section" id="experience">
+            <div class="container">
+                <p class="section-eyebrow" data-reveal>Experience</p>
+                <h2 class="section-title" data-reveal>Where I've worked</h2>
+
+                <ol class="timeline">
+                    <li class="timeline-item" data-reveal>
+                        <div class="tl-logo"><img src="assets/images/terrabyte.svg" alt="TerraByte"></div>
+                        <div class="tl-body">
+                            <div class="tl-head">
+                                <h3>CEO &amp; Co-Founder</h3>
+                                <span class="tl-time">Jan 2026 - Present</span>
+                            </div>
+                            <p class="tl-org">TerraByte</p>
+                            <p class="tl-desc">
+                                Building TerraByte, the Earth search engine: geospatial foundation models and a
+                                natural-language interface for satellite imagery. Leading product, research, and
+                                go-to-market - from Earth-embedding models and similarity search to real-time
+                                intelligence products for defense, energy, and finance.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item" data-reveal>
+                        <div class="tl-logo"><img src="assets/images/microsoft.png" alt="Microsoft"></div>
+                        <div class="tl-body">
+                            <div class="tl-head">
+                                <h3>Microsoft</h3>
+                                <span class="tl-time">Feb 2020 - Dec 2025</span>
+                            </div>
+                            <p class="tl-org">5 yrs 11 mos · Seattle, WA · Rose from Data &amp; Applied Scientist to Principal</p>
+                            <ol class="role-list">
+                                <li class="role">
+                                    <div class="role-head">
+                                        <h4>Principal Applied Science Manager</h4>
+                                        <span class="role-time">Sep 2024 - Dec 2025</span>
+                                    </div>
+                                    <ul class="role-points">
+                                        <li>Tech lead for AI on <strong>Microsoft Planetary Computer Pro</strong> - set the roadmap, hired and coached a 10-person applied-science pod, and built the platform's first geospatial foundation model plus a GenAI analytics layer.</li>
+                                        <li>Designed a multimodal Vision-Language + LLM architecture for damage assessment, terrain reasoning, and natural-language tasking.</li>
+                                        <li>Built a secure RAG stack on GPT-4o / o3 and Azure AI Search, cutting mission-planning query time from hours to minutes.</li>
+                                        <li>Containerized ONNX / TensorRT models for Jetson Orin edge nodes - 30 FPS full-motion-video inference within a 15W power budget.</li>
+                                    </ul>
+                                </li>
+                                <li class="role">
+                                    <div class="role-head">
+                                        <h4>Senior Applied Science Manager</h4>
+                                        <span class="role-time">Sep 2022 - Sep 2024</span>
+                                    </div>
+                                    <p class="role-desc">
+                                        Led object-detection, semantic-segmentation, and tracking models for federal
+                                        customers on aerial &amp; satellite imagery, partnering closely with clients to
+                                        design tailored computer-vision solutions.
+                                    </p>
+                                </li>
+                                <li class="role">
+                                    <div class="role-head">
+                                        <h4>Data &amp; Applied Science Lead</h4>
+                                        <span class="role-time">Jul 2022 - Aug 2022</span>
+                                    </div>
+                                </li>
+                                <li class="role">
+                                    <div class="role-head">
+                                        <h4>Data &amp; Applied Scientist II</h4>
+                                        <span class="role-time">Sep 2021 - Jun 2022</span>
+                                    </div>
+                                </li>
+                                <li class="role">
+                                    <div class="role-head">
+                                        <h4>Data &amp; Applied Scientist</h4>
+                                        <span class="role-time">Feb 2020 - Aug 2021</span>
+                                    </div>
+                                    <p class="role-desc">
+                                        Object detection, semantic segmentation, and tracking on aerial imagery.
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item" data-reveal>
+                        <div class="tl-logo"><img src="assets/images/cmu2.png" alt="Carnegie Mellon University"></div>
+                        <div class="tl-body">
+                            <div class="tl-head">
+                                <h3>Graduate Teaching Assistant</h3>
+                                <span class="tl-time">Aug 2019 - Dec 2019</span>
+                            </div>
+                            <p class="tl-org">Carnegie Mellon University · Robotics Institute</p>
+                            <p class="tl-desc">
+                                TA for the graduate Computer Vision course (16-720) taught by Prof. John Galeotti -
+                                preparing assignments, grading, and holding office hours.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item" data-reveal>
+                        <div class="tl-logo"><img src="assets/images/uber.jpg" alt="Uber ATG"></div>
+                        <div class="tl-body">
+                            <div class="tl-head">
+                                <h3>Perception Intern</h3>
+                                <span class="tl-time">May 2018 - Aug 2018</span>
+                            </div>
+                            <p class="tl-org">Uber Advanced Technologies Group · Advisor: Warren Smith</p>
+                            <p class="tl-desc">
+                                On Uber's self-driving team, built a model to characterize LiDAR performance and
+                                identify the factors driving detector accuracy - informing next-gen sensor specs.
+                                Validated transfer-learning approaches so models could be reused across LiDARs with
+                                different beam spacings and scanning patterns.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item" data-reveal>
+                        <div class="tl-logo"><img src="assets/images/cmu2.png" alt="Carnegie Mellon University"></div>
+                        <div class="tl-body">
+                            <div class="tl-head">
+                                <h3>Visiting Research Scholar</h3>
+                                <span class="tl-time">Jun 2018 - Aug 2018</span>
+                            </div>
+                            <p class="tl-org">Carnegie Mellon University · CS Dept · Advisor: Prof. Dave Touretzky</p>
+                            <p class="tl-desc">
+                                Built a multi-camera / multi-robot facility for the autonomous robot Cozmo by
+                                repurposing old phones as perched cameras. Performed camera calibration and SLAM,
+                                and created a server sharing a world map with robot clients for better path planning
+                                and navigation.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item" data-reveal>
+                        <div class="tl-logo"><img src="assets/images/cmu2.png" alt="Carnegie Mellon University"></div>
+                        <div class="tl-body">
+                            <div class="tl-head">
+                                <h3>Graduate Teaching Assistant</h3>
+                                <span class="tl-time">Jan 2018 - May 2018</span>
+                            </div>
+                            <p class="tl-org">Carnegie Mellon University · Robotics Institute</p>
+                            <p class="tl-desc">
+                                TA for the graduate Computer Vision course (16-720) taught by Prof. Srinivasa
+                                Narasimhan - preparing assignments, grading, and holding office hours.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item" data-reveal>
+                        <div class="tl-logo"><img src="assets/images/ibm.jpeg" alt="IBM Research"></div>
+                        <div class="tl-body">
+                            <div class="tl-head">
+                                <h3>Research Intern</h3>
+                                <span class="tl-time">Jun 2017 - Aug 2017</span>
+                            </div>
+                            <p class="tl-org">IBM Research Labs, New Delhi · Manager: Dr. Sameep Mehta</p>
+                            <p class="tl-desc">
+                                Built a contextual in-video advertising system that places brands in contextually
+                                relevant video at the least-intrusive moment - using multi-modal analytics and
+                                semantic understanding of video content.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item" data-reveal>
+                        <div class="tl-logo"><img src="assets/images/shop.png" alt="Shopclues"></div>
+                        <div class="tl-body">
+                            <div class="tl-head">
+                                <h3>Software Development Intern</h3>
+                                <span class="tl-time">Jun 2016 - Aug 2016</span>
+                            </div>
+                            <p class="tl-org">Shopclues, Gurugram, India</p>
+                            <p class="tl-desc">
+                                Owned the notification module of Shopclues's POS app, integrating Firebase Cloud
+                                Messaging and Notifications, plus Firebase Analytics for event logging.
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Selected Work -->
+        <section class="section" id="work">
+            <div class="container">
+                <p class="section-eyebrow" data-reveal>Selected Work</p>
+                <h2 class="section-title" data-reveal>Things I've built</h2>
+
+                <div class="work-grid">
+                    <article class="work-card feature" data-reveal>
+                        <div class="work-card-top">
+                            <span class="work-kicker">TerraByte · Flagship</span>
+                            <h3>The Earth Search Engine</h3>
+                        </div>
+                        <p>
+                            Geospatial foundation models that turn raw satellite imagery into searchable
+                            embeddings - find oil tanks, deforestation, power plants, or copper mines anywhere
+                            on Earth with a plain-language query. Real-time ingestion, predictive AI, and
+                            developer APIs.
+                        </p>
+                        <div class="work-tags">
+                            <span>Foundation models</span><span>Earth embeddings</span><span>Similarity search</span>
+                        </div>
+                        <a class="work-link" href="https://terrabyte.ai" target="_blank" rel="noopener">
+                            terrabyte.ai
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                        </a>
+                    </article>
+
+                    <article class="work-card feature" data-reveal>
+                        <div class="work-card-top">
+                            <span class="work-kicker">Intelligence · Demo</span>
+                            <h3>Strait of Hormuz Maritime Intelligence</h3>
+                        </div>
+                        <p>
+                            A multi-intelligence platform for the Strait of Hormuz: Sentinel-1 SAR vessel
+                            detection fused with Brent crude pricing and news/OSINT, topped with an automated
+                            Opus 4.8 analyst brief that reads the signals and writes the assessment.
+                        </p>
+                        <div class="work-tags">
+                            <span>Sentinel-1 SAR</span><span>Vessel detection</span><span>OSINT fusion</span><span>LLM analysis</span>
+                        </div>
+                        <div class="work-links">
+                            <a class="work-link" href="https://hormuz-vessels-demo.vercel.app" target="_blank" rel="noopener">
+                                Live demo
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                            </a>
+                            <a class="work-link subtle" href="https://github.com/rishimadhok/hormuz-vessels" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </article>
                 </div>
 
-                <div class="item">
-                    <span class="project-title">Action Recognition using Synthetic Data | Advisor: Prof. Kris Kitani</a></span>
-                    <span class="project-tagline">
-                      <ul>
-                        <li>
-                          Worked on recognizing multi-object activities such as left/right turning of a car and car taking a u-turn.
-                        </li>
-                        <li>
-                          Working on the generation of synthetic data which closely matches the real world data in a graphics environment such
-                            as Unreal Engine.
-                        </li>
-                        <li>
-                          Deployed a bi-directional RNN to recognize the activities.
-                        </li>
-                      </ul>
-                    </span>
+                <h3 class="subsection-title" data-reveal>Research projects</h3>
+                <div class="research-grid">
+                    <article class="research-card" data-reveal>
+                        <h4>Sensor Fusion with Single-Photon Detectors</h4>
+                        <p class="research-advisor">Advisor: Prof. Matthew O'Toole · CMU</p>
+                        <p>
+                            A suite of sensor-fusion techniques built around single-photon avalanche diodes
+                            (SPADs). Developed a novel algorithm to fuse single-photon LiDAR, stereo cameras, and
+                            radar into an intermediate cost-volume representation that, passed through a deep
+                            network (PSM-Net), yields better disparity and depth estimates.
+                        </p>
+                    </article>
+                    <article class="research-card" data-reveal>
+                        <h4>Action Recognition using Synthetic Data</h4>
+                        <p class="research-advisor">Advisor: Prof. Kris Kitani · CMU</p>
+                        <p>
+                            Recognizing multi-object activities - like cars turning or making U-turns - by
+                            generating synthetic data in Unreal Engine to match real-world distributions, then
+                            deploying a bi-directional RNN to classify the activities.
+                        </p>
+                    </article>
+                    <article class="research-card" data-reveal>
+                        <h4>Semantic Understanding of Video</h4>
+                        <p class="research-advisor">Advisor: Dr. Rajni Jindal · DTU</p>
+                        <p>
+                            Preserved both context and temporal sequence of video through a sequence-to-sequence
+                            model - an LSTM acting as both encoder and decoder - to generate natural-language
+                            summaries of video content.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section class="section" id="publications">
+            <div class="container">
+                <p class="section-eyebrow" data-reveal>Publications &amp; Patents</p>
+                <h2 class="section-title" data-reveal>Research</h2>
+
+                <div class="pub-stats" data-reveal>
+                    <div class="stat"><span class="stat-num">295</span><span class="stat-label">Citations</span></div>
+                    <div class="stat"><span class="stat-num">7</span><span class="stat-label">h-index</span></div>
+                    <div class="stat"><span class="stat-num">6</span><span class="stat-label">i10-index</span></div>
+                    <a class="stat-link" href="https://scholar.google.com/citations?user=1fX86jsAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar →</a>
                 </div>
 
-                <div class="item">
-                    <span class="project-title">Semantic Understanding of a Video | Advisor: Dr. Rajni Jindal</a></span>
-                    <span class="project-tagline">
-                      <ul>
-                        <li>
-                          Preserved the context as well as the temporal sequence of a video by understanding its semantics.
-                        </li>
-                        <li>
-                          Created a sequence to sequence model, where a LSTM is used both as an encoder as well as a decoder and
-                            finally generated a summary of the video in natural language.
-                        </li>
-                      </ul>
-                    </span>
+                <h3 class="pub-group-title" data-reveal>Recent · 2024-2026</h3>
+                <ul class="pub-list">
+                    <li class="pub" data-reveal>
+                        <a href="https://arxiv.org/abs/2509.06993" target="_blank" rel="noopener" class="pub-title">Geospatial Foundational Embedder: Top-1 Winning Solution on the EarthVision Embed2Scale Challenge (CVPR 2025)</a>
+                        <p class="pub-authors">Z. Xu, R. Tang, M. Bianco, Q. Zhang, <u>R. Madhok</u>, N. Karianakis, F. Yu</p>
+                        <p class="pub-venue">arXiv · 2025</p>
+                    </li>
+                    <li class="pub" data-reveal>
+                        <a href="https://arxiv.org/abs/2510.00072" target="_blank" rel="noopener" class="pub-title">Geo-R1: Unlocking VLM Geospatial Reasoning with Cross-View Reinforcement Learning</a>
+                        <p class="pub-authors">C. Xu, F. Yu, M. Bianco, R. Tang, Q. Zhang, Z. Xu, <u>R. Madhok</u>, et al.</p>
+                        <p class="pub-venue">arXiv · 2025</p>
+                    </li>
+                    <li class="pub" data-reveal>
+                        <a href="https://openreview.net/forum?id=QV4sV5cbLl" target="_blank" rel="noopener" class="pub-title">MARS: A Foundational Map Auto-Regressor</a>
+                        <p class="pub-authors">Q. Zhang, S. Bag, R. Kukal, M. Figueroa, <u>R. Madhok</u>, N. Karianakis, F. Yu</p>
+                        <p class="pub-venue">International Conference on Learning Representations (ICLR) · 2026</p>
+                    </li>
+                    <li class="pub" data-reveal>
+                        <a href="https://link.springer.com/article/10.1007/s11263-025-02439-x" target="_blank" rel="noopener" class="pub-title">Autoregressive Temporal Modeling for Advanced Tracking-by-Diffusion</a>
+                        <p class="pub-authors">P. Nguyen, <u>R. Madhok</u>, B. Raj, K. Luu</p>
+                        <p class="pub-venue">International Journal of Computer Vision (IJCV) · 2025</p>
+                    </li>
+                    <li class="pub" data-reveal>
+                        <a href="https://openreview.net/forum?id=nxWkXVsXum" target="_blank" rel="noopener" class="pub-title">Click &amp; Describe: Multimodal Grounding and Tracking for Aerial Objects</a>
+                        <p class="pub-authors">R. Kukal, J. Patravali, F. Yu, S. Singh, N. Karianakis, <u>R. Madhok</u></p>
+                        <p class="pub-venue">NeurIPS 2024 · Workshop on Video-Language Models</p>
+                    </li>
+                    <li class="pub" data-reveal>
+                        <a href="https://ieeexplore.ieee.org/document/10537049/" target="_blank" rel="noopener" class="pub-title">Rethinking Latency-Aware DNN Design with GPU Tail Effect Analysis</a>
+                        <p class="pub-authors">F. Yu, Z. Xu, L. Shangguan, D. Wang, D. Stamoulis, <u>R. Madhok</u>, N. Karianakis, et al.</p>
+                        <p class="pub-venue">IEEE Transactions on Computer-Aided Design (TCAD) · 2024</p>
+                    </li>
+                </ul>
+
+                <h3 class="pub-group-title" data-reveal>Patents</h3>
+                <ul class="pub-list">
+                    <li class="pub" data-reveal>
+                        <a href="https://scholar.google.com/scholar?q=Robust+real-time+multiple-object+tracking+with+detection+propagation+and+per-class+optimization" target="_blank" rel="noopener" class="pub-title">Robust real-time multiple-object tracking with detection propagation and per-class optimization</a>
+                        <p class="pub-authors"><u>R. Madhok</u>, C. M. Burgess, N. Karianakis</p>
+                        <p class="pub-venue">US Patent App. 18/642,890 · 2025</p>
+                    </li>
+                    <li class="pub" data-reveal>
+                        <a href="https://scholar.google.com/scholar?q=Multimodal+aerial+grounding+and+tracking+Patravali+Madhok+Karianakis" target="_blank" rel="noopener" class="pub-title">Multimodal aerial grounding and tracking</a>
+                        <p class="pub-authors">J. Patravali, F. Yu, <u>R. Madhok</u>, S. Singh, N. Karianakis, et al.</p>
+                        <p class="pub-venue">US Patent App. 18/680,208 · 2025</p>
+                    </li>
+                    <li class="pub" data-reveal>
+                        <a href="https://scholar.google.com/scholar?q=Single-object+tracking+with+hierarchical+appearance+modeling+and+verification" target="_blank" rel="noopener" class="pub-title">Single-object tracking with hierarchical appearance modeling and verification</a>
+                        <p class="pub-authors">J. Patravali, <u>R. Madhok</u>, N. Karianakis, P. Lei</p>
+                        <p class="pub-venue">US Patent App. 18/515,487 · 2025</p>
+                    </li>
+                </ul>
+
+                <h3 class="pub-group-title" data-reveal>Earlier work</h3>
+                <ul class="pub-list">
+                    <li class="pub" data-reveal>
+                        <a href="https://arxiv.org/abs/1808.07507" target="_blank" rel="noopener" class="pub-title">Video Jigsaw: Unsupervised Learning of Spatiotemporal Context for Video Action Recognition</a>
+                        <p class="pub-authors">U. Ahsan, <u>R. Madhok</u>, I. Essa</p>
+                        <p class="pub-venue">CVPR 2019 · LUV Workshop &nbsp;·&nbsp; WACV 2019</p>
+                    </li>
+                    <li class="pub" data-reveal>
+                        <a href="assets/images/An Extensible Multi-Sensor Fusion Framework for 3D Imaging.pdf" target="_blank" rel="noopener" class="pub-title">An Extensible Multi-Sensor Fusion Framework for 3D Imaging</a>
+                        <p class="pub-authors">T. A. Siddiqui, <u>R. Madhok</u>, M. O'Toole</p>
+                        <p class="pub-venue">CVPR 2020 · WAD Workshop</p>
+                    </li>
+                    <li class="pub" data-reveal>
+                        <a href="https://arxiv.org/abs/2011.03897" target="_blank" rel="noopener" class="pub-title">Towards Latency-Aware DNN Optimization with GPU Runtime Analysis and Tail Effect Elimination</a>
+                        <p class="pub-authors">F. Yu, Z. Xu, T. Shen, D. Stamoulis, L. Shangguan, D. Wang, <u>R. Madhok</u>, et al.</p>
+                        <p class="pub-venue">EuroSys 2022</p>
+                    </li>
+                    <li class="pub" data-reveal>
+                        <a href="assets/images/Semantic Understanding for Contextual In-Video Advertising.pdf" target="_blank" rel="noopener" class="pub-title">Semantic Understanding for Contextual In-Video Advertising</a>
+                        <p class="pub-authors"><u>R. Madhok</u>, S. Mujumdar, N. Gupta, S. Mehta</p>
+                        <p class="pub-venue">AAAI 2018</p>
+                    </li>
+                    <li class="pub" data-reveal>
+                        <a href="assets/images/Proposing Contextually Relevant Quotes for Images.pdf" target="_blank" rel="noopener" class="pub-title">Proposing Contextually Relevant Quotes for Images</a>
+                        <p class="pub-authors">S. Goel, <u>R. Madhok</u>, S. Garg</p>
+                        <p class="pub-venue">ECIR 2018</p>
+                    </li>
+                    <li class="pub" data-reveal>
+                        <a href="assets/images/SentiMozart-Music Generation Based on Emotions.pdf" target="_blank" rel="noopener" class="pub-title">SentiMozart: Music Generation Based on Emotions</a>
+                        <p class="pub-authors"><u>R. Madhok</u>, S. Goel, S. Garg</p>
+                        <p class="pub-venue">ICAART 2018</p>
+                    </li>
+                    <li class="pub" data-reveal>
+                        <a href="assets/images/Content Driven Enrichment of Formal Text using Concept Definitions and Applications.pdf" target="_blank" rel="noopener" class="pub-title">Content-Driven Enrichment of Formal Text Using Concept Definitions and Applications</a>
+                        <p class="pub-authors">A. Jain, S. Mujumdar, N. Gupta, S. Mehta, <u>R. Madhok</u></p>
+                        <p class="pub-venue">ACM Hypertext &amp; Social Media (HT) 2018</p>
+                    </li>
+                </ul>
+                <p class="pub-foot" data-reveal>
+                    <a href="https://scholar.google.com/citations?user=1fX86jsAAAAJ&hl=en" target="_blank" rel="noopener" class="link-accent">View the full list on Google Scholar →</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills + Education -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="split">
+                    <div class="split-col" data-reveal>
+                        <p class="section-eyebrow">Skills</p>
+                        <h2 class="section-title">What I work with</h2>
+                        <div class="skill-groups">
+                            <div class="skill-group">
+                                <h4>AI &amp; Machine Learning</h4>
+                                <ul class="tag-row">
+                                    <li>Foundation models</li><li>LLMs</li><li>Computer vision</li>
+                                    <li>Deep learning</li><li>Self-supervised learning</li><li>PyTorch</li>
+                                </ul>
+                            </div>
+                            <div class="skill-group">
+                                <h4>Geospatial</h4>
+                                <ul class="tag-row">
+                                    <li>Satellite &amp; SAR imagery</li><li>Remote sensing</li>
+                                    <li>Earth embeddings</li><li>GIS</li>
+                                </ul>
+                            </div>
+                            <div class="skill-group">
+                                <h4>Engineering</h4>
+                                <ul class="tag-row">
+                                    <li>Python</li><li>C++</li><li>Distributed training</li>
+                                    <li>APIs &amp; MLOps</li><li>Cloud (Azure / AWS)</li>
+                                </ul>
+                            </div>
+                            <div class="skill-group">
+                                <h4>Leadership</h4>
+                                <ul class="tag-row">
+                                    <li>Team building</li><li>Product strategy</li><li>Research direction</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="split-col" data-reveal>
+                        <p class="section-eyebrow">Education</p>
+                        <h2 class="section-title">Where I studied</h2>
+                        <div class="edu-list">
+                            <div class="edu-item">
+                                <div class="tl-logo"><img src="assets/images/cmu2.png" alt="Carnegie Mellon University"></div>
+                                <div>
+                                    <h3>Carnegie Mellon University</h3>
+                                    <p class="edu-degree">MS, Computer Vision · Robotics Institute</p>
+                                    <p class="edu-meta">Aug 2018 - Dec 2019 · CGPA 4.17 / 4.33</p>
+                                </div>
+                            </div>
+                            <div class="edu-item">
+                                <div class="tl-logo"><img src="assets/images/dtu.png" alt="Delhi Technological University"></div>
+                                <div>
+                                    <h3>Delhi Technological University</h3>
+                                    <p class="edu-degree">BTech, Computer Science &amp; Engineering</p>
+                                    <p class="edu-meta">Aug 2014 - May 2018 · CGPA 9.368 / 10</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            
-            <section class="skills-section section">
-                <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
-                <div class="skillset">        
-                    <div class="item">
-                        <h3 class="level-title">Python</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="98%">
-                            </div>                                      
-                        </div><!--//level-bar-->                                 
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">OpenCV</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="98%">
-                            </div>                                      
-                        </div><!--//level-bar-->                                 
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">C++ &amp; Java </h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="98%">
-                            </div>                                      
-                        </div><!--//level-bar-->                                 
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">Android Studio</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="95%">
-                            </div>                                      
-                        </div><!--//level-bar-->                                 
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">HTML5 &amp; CSS</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="85%">
-                            </div>                                      
-                        </div><!--//level-bar-->                                 
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">Cozmo Tools</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="60%">
-                            </div>                                      
-                        </div><!--//level-bar-->                                 
-                    </div><!--//item-->
-                    
-                </div>  
-            </section><!--//skills-section-->
-            
-        </div><!--//main-body-->
-    </div>
- 
-    <footer class="footer">
-        <div class="text-center">
-                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-        </div><!--//container-->
-    </footer><!--//footer-->
- 
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>   
+            </div>
+        </section>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123353187-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        <!-- Contact -->
+        <section class="section contact" id="contact">
+            <div class="container contact-inner" data-reveal>
+                <p class="section-eyebrow">Contact</p>
+                <h2 class="contact-title">Let's build something that sees the planet.</h2>
+                <p class="contact-sub">
+                    Whether it's TerraByte, geospatial AI, or computer vision - I'd love to hear from you.
+                </p>
+                <div class="hero-actions center">
+                    <button type="button" class="btn btn-primary" data-email>
+                        Email me
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </button>
+                    <a class="btn btn-ghost" href="https://www.linkedin.com/in/rishi-madhok-91663b82/" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-      gtag('config', 'UA-123353187-1');
-    </script>
- 
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span class="brand-mark small" aria-hidden="true">RM</span>
+            <p>© <span id="year">2026</span> Rishi Madhok</p>
+            <ul class="footer-links">
+                <li><button type="button" class="footer-email" data-email>Email</button></li>
+                <li><a href="https://www.linkedin.com/in/rishi-madhok-91663b82/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://x.com/rishi_madhok" target="_blank" rel="noopener">X</a></li>
+                <li><a href="https://github.com/rishimadhok" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://scholar.google.com/citations?user=1fX86jsAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="assets/js/site.js"></script>
 </body>
-</html> 
-
+</html>
