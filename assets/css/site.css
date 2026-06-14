@@ -305,6 +305,7 @@ img { max-width: 100%; display: block; }
 .work-card::before {
   content: ""; position: absolute; inset: 0; opacity: 0; transition: opacity 0.4s var(--ease);
   background: radial-gradient(circle at 100% 0%, rgba(101,242,255,0.1), transparent 55%);
+  pointer-events: none;
 }
 .work-card:hover { border-color: var(--panel-border-hover); transform: translateY(-4px); box-shadow: var(--shadow-lg); }
 .work-card:hover::before { opacity: 1; }
@@ -317,7 +318,7 @@ img { max-width: 100%; display: block; }
   background: rgba(101,242,255,0.06); border: 1px solid var(--panel-border);
 }
 .work-links { display: flex; gap: 18px; align-items: center; }
-.work-link { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); font-weight: 600; font-size: 0.95rem; }
+.work-link { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 6px; color: var(--accent); font-weight: 600; font-size: 0.95rem; }
 .work-link:hover { color: #fff; }
 .work-link.subtle { color: var(--text-secondary); font-weight: 500; }
 .work-link.subtle:hover { color: var(--accent); }
