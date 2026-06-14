@@ -25,6 +25,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap">
     <link rel="stylesheet" href="assets/css/site.css">
+
+    <!-- Progressive enhancement: flag that JS is available so the reveal
+         animations apply. If JS is disabled/blocked/fails, content stays
+         visible by default (see the .js gating in site.css). The failsafe
+         reveals everything if site.js never runs. -->
+    <script>
+      document.documentElement.classList.add('js');
+      window.__revealFailsafe = window.setTimeout(function () {
+        var els = document.querySelectorAll('[data-reveal]');
+        for (var i = 0; i < els.length; i++) { els[i].classList.add('in'); }
+      }, 2500);
+    </script>
 </head>
 <body>
     <!-- Animated space backdrop -->
@@ -49,11 +61,11 @@
                 <a href="#publications">Publications</a>
                 <a href="#contact" class="nav-cta">Contact</a>
             </nav>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-controls="mobileNav" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
         </div>
-        <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+        <nav class="mobile-nav" id="mobileNav" aria-label="Mobile" inert>
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
             <a href="#work">Work</a>
@@ -172,7 +184,7 @@
 
                 <ol class="timeline">
                     <li class="timeline-item" data-reveal>
-                        <div class="tl-logo"><img src="assets/images/terrabyte.svg" alt="TerraByte"></div>
+                        <div class="tl-logo"><img loading="lazy" decoding="async" src="assets/images/terrabyte.svg" alt="TerraByte"></div>
                         <div class="tl-body">
                             <div class="tl-head">
                                 <h3>CEO &amp; Co-Founder</h3>
@@ -189,7 +201,7 @@
                     </li>
 
                     <li class="timeline-item" data-reveal>
-                        <div class="tl-logo"><img src="assets/images/microsoft.png" alt="Microsoft"></div>
+                        <div class="tl-logo"><img loading="lazy" decoding="async" src="assets/images/microsoft.png" alt="Microsoft"></div>
                         <div class="tl-body">
                             <div class="tl-head">
                                 <h3>Microsoft</h3>
@@ -246,7 +258,7 @@
                     </li>
 
                     <li class="timeline-item" data-reveal>
-                        <div class="tl-logo"><img src="assets/images/cmu2.png" alt="Carnegie Mellon University"></div>
+                        <div class="tl-logo"><img loading="lazy" decoding="async" src="assets/images/cmu2.png" alt="Carnegie Mellon University"></div>
                         <div class="tl-body">
                             <div class="tl-head">
                                 <h3>Graduate Teaching Assistant</h3>
@@ -261,7 +273,7 @@
                     </li>
 
                     <li class="timeline-item" data-reveal>
-                        <div class="tl-logo"><img src="assets/images/uber.jpg" alt="Uber ATG"></div>
+                        <div class="tl-logo"><img loading="lazy" decoding="async" src="assets/images/uber.jpg" alt="Uber ATG"></div>
                         <div class="tl-body">
                             <div class="tl-head">
                                 <h3>Perception Intern</h3>
@@ -278,7 +290,7 @@
                     </li>
 
                     <li class="timeline-item" data-reveal>
-                        <div class="tl-logo"><img src="assets/images/cmu2.png" alt="Carnegie Mellon University"></div>
+                        <div class="tl-logo"><img loading="lazy" decoding="async" src="assets/images/cmu2.png" alt="Carnegie Mellon University"></div>
                         <div class="tl-body">
                             <div class="tl-head">
                                 <h3>Visiting Research Scholar</h3>
@@ -295,7 +307,7 @@
                     </li>
 
                     <li class="timeline-item" data-reveal>
-                        <div class="tl-logo"><img src="assets/images/cmu2.png" alt="Carnegie Mellon University"></div>
+                        <div class="tl-logo"><img loading="lazy" decoding="async" src="assets/images/cmu2.png" alt="Carnegie Mellon University"></div>
                         <div class="tl-body">
                             <div class="tl-head">
                                 <h3>Graduate Teaching Assistant</h3>
@@ -310,7 +322,7 @@
                     </li>
 
                     <li class="timeline-item" data-reveal>
-                        <div class="tl-logo"><img src="assets/images/ibm.jpeg" alt="IBM Research"></div>
+                        <div class="tl-logo"><img loading="lazy" decoding="async" src="assets/images/ibm.jpeg" alt="IBM Research"></div>
                         <div class="tl-body">
                             <div class="tl-head">
                                 <h3>Research Intern</h3>
@@ -326,7 +338,7 @@
                     </li>
 
                     <li class="timeline-item" data-reveal>
-                        <div class="tl-logo"><img src="assets/images/shop.png" alt="Shopclues"></div>
+                        <div class="tl-logo"><img loading="lazy" decoding="async" src="assets/images/shop.png" alt="Shopclues"></div>
                         <div class="tl-body">
                             <div class="tl-head">
                                 <h3>Software Development Intern</h3>
@@ -448,9 +460,9 @@
                         <p class="pub-venue">arXiv · 2025</p>
                     </li>
                     <li class="pub" data-reveal>
-                        <a href="https://arxiv.org/abs/2510.00072" target="_blank" rel="noopener" class="pub-title">Geo-R1: Unlocking VLM Geospatial Reasoning with Cross-View Reinforcement Learning</a>
+                        <a href="https://arxiv.org/abs/2510.00072" target="_blank" rel="noopener" class="pub-title">Unlocking Zero-Shot Geospatial Reasoning via Indirect Rewards</a>
                         <p class="pub-authors">C. Xu, F. Yu, M. Bianco, R. Tang, Q. Zhang, Z. Xu, <u>R. Madhok</u>, et al.</p>
-                        <p class="pub-venue">arXiv · 2025</p>
+                        <p class="pub-venue">ICML 2026</p>
                     </li>
                     <li class="pub" data-reveal>
                         <a href="https://openreview.net/forum?id=QV4sV5cbLl" target="_blank" rel="noopener" class="pub-title">MARS: A Foundational Map Auto-Regressor</a>
@@ -501,7 +513,7 @@
                         <p class="pub-venue">CVPR 2019 · LUV Workshop &nbsp;·&nbsp; WACV 2019</p>
                     </li>
                     <li class="pub" data-reveal>
-                        <a href="assets/images/An Extensible Multi-Sensor Fusion Framework for 3D Imaging.pdf" target="_blank" rel="noopener" class="pub-title">An Extensible Multi-Sensor Fusion Framework for 3D Imaging</a>
+                        <a href="assets/images/An%20Extensible%20Multi-Sensor%20Fusion%20Framework%20for%203D%20Imaging.pdf" target="_blank" rel="noopener" class="pub-title">An Extensible Multi-Sensor Fusion Framework for 3D Imaging</a>
                         <p class="pub-authors">T. A. Siddiqui, <u>R. Madhok</u>, M. O'Toole</p>
                         <p class="pub-venue">CVPR 2020 · WAD Workshop</p>
                     </li>
@@ -511,22 +523,22 @@
                         <p class="pub-venue">EuroSys 2022</p>
                     </li>
                     <li class="pub" data-reveal>
-                        <a href="assets/images/Semantic Understanding for Contextual In-Video Advertising.pdf" target="_blank" rel="noopener" class="pub-title">Semantic Understanding for Contextual In-Video Advertising</a>
+                        <a href="assets/images/Semantic%20Understanding%20for%20Contextual%20In-Video%20Advertising.pdf" target="_blank" rel="noopener" class="pub-title">Semantic Understanding for Contextual In-Video Advertising</a>
                         <p class="pub-authors"><u>R. Madhok</u>, S. Mujumdar, N. Gupta, S. Mehta</p>
                         <p class="pub-venue">AAAI 2018</p>
                     </li>
                     <li class="pub" data-reveal>
-                        <a href="assets/images/Proposing Contextually Relevant Quotes for Images.pdf" target="_blank" rel="noopener" class="pub-title">Proposing Contextually Relevant Quotes for Images</a>
+                        <a href="assets/images/Proposing%20Contextually%20Relevant%20Quotes%20for%20Images.pdf" target="_blank" rel="noopener" class="pub-title">Proposing Contextually Relevant Quotes for Images</a>
                         <p class="pub-authors">S. Goel, <u>R. Madhok</u>, S. Garg</p>
                         <p class="pub-venue">ECIR 2018</p>
                     </li>
                     <li class="pub" data-reveal>
-                        <a href="assets/images/SentiMozart-Music Generation Based on Emotions.pdf" target="_blank" rel="noopener" class="pub-title">SentiMozart: Music Generation Based on Emotions</a>
+                        <a href="assets/images/SentiMozart-Music%20Generation%20Based%20on%20Emotions.pdf" target="_blank" rel="noopener" class="pub-title">SentiMozart: Music Generation Based on Emotions</a>
                         <p class="pub-authors"><u>R. Madhok</u>, S. Goel, S. Garg</p>
                         <p class="pub-venue">ICAART 2018</p>
                     </li>
                     <li class="pub" data-reveal>
-                        <a href="assets/images/Content Driven Enrichment of Formal Text using Concept Definitions and Applications.pdf" target="_blank" rel="noopener" class="pub-title">Content-Driven Enrichment of Formal Text Using Concept Definitions and Applications</a>
+                        <a href="assets/images/Content%20Driven%20Enrichment%20of%20Formal%20Text%20using%20Concept%20Definitions%20and%20Applications.pdf" target="_blank" rel="noopener" class="pub-title">Content-Driven Enrichment of Formal Text Using Concept Definitions and Applications</a>
                         <p class="pub-authors">A. Jain, S. Mujumdar, N. Gupta, S. Mehta, <u>R. Madhok</u></p>
                         <p class="pub-venue">ACM Hypertext &amp; Social Media (HT) 2018</p>
                     </li>
@@ -580,7 +592,7 @@
                         <h2 class="section-title">Where I studied</h2>
                         <div class="edu-list">
                             <div class="edu-item">
-                                <div class="tl-logo"><img src="assets/images/cmu2.png" alt="Carnegie Mellon University"></div>
+                                <div class="tl-logo"><img loading="lazy" decoding="async" src="assets/images/cmu2.png" alt="Carnegie Mellon University"></div>
                                 <div>
                                     <h3>Carnegie Mellon University</h3>
                                     <p class="edu-degree">MS, Computer Vision · Robotics Institute</p>
@@ -588,7 +600,7 @@
                                 </div>
                             </div>
                             <div class="edu-item">
-                                <div class="tl-logo"><img src="assets/images/dtu.png" alt="Delhi Technological University"></div>
+                                <div class="tl-logo"><img loading="lazy" decoding="async" src="assets/images/dtu.png" alt="Delhi Technological University"></div>
                                 <div>
                                     <h3>Delhi Technological University</h3>
                                     <p class="edu-degree">BTech, Computer Science &amp; Engineering</p>

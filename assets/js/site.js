@@ -18,11 +18,13 @@
     toggle.addEventListener('click', function () {
       var open = mobileNav.classList.toggle('open');
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      mobileNav.inert = !open; /* keep collapsed links out of the tab order */
     });
     mobileNav.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
         mobileNav.classList.remove('open');
         toggle.setAttribute('aria-expanded', 'false');
+        mobileNav.inert = true;
       });
     });
   }
@@ -42,6 +44,8 @@
   } else {
     revealEls.forEach(function (el) { el.classList.add('in'); });
   }
+  /* JS-driven reveal is wired up, so cancel the no-JS failsafe set in <head>. */
+  if (window.__revealFailsafe) { window.clearTimeout(window.__revealFailsafe); }
 
   /* Footer year */
   var yearEl = document.getElementById('year');
@@ -56,7 +60,11 @@
   document.querySelectorAll('[data-email]').forEach(function (el) {
     el.addEventListener('click', function () {
       var addr = emailAddress();
-      if (addr) window.location.href = 'mailto:' + addr;
+      /* validate it is a clean single address before building the mailto,
+         so no header/query injection is possible if the token ever changes */
+      if (addr && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(addr)) {
+        window.location.href = 'mailto:' + addr;
+      }
     });
   });
 })();

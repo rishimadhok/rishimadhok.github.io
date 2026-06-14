@@ -13,7 +13,7 @@
   --panel-border-hover: rgba(101, 242, 255, 0.45);
   --text-primary: #f3f6ff;
   --text-secondary: #9fb0d4;
-  --text-muted: #6b7ba0;
+  --text-muted: #8593b6;
   --accent: #65f2ff;
   --accent-2: #2b8cff;
   --accent-glow: rgba(101, 242, 255, 0.35);
@@ -393,13 +393,15 @@ a.pub-title:hover { color: var(--accent); }
 .footer-links a, .footer-links button { color: var(--text-secondary); font-size: 0.9rem; }
 .footer-links a:hover, .footer-links button:hover { color: var(--accent); }
 
-/* ---------- Reveal animation ---------- */
-[data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
-[data-reveal].in { opacity: 1; transform: none; }
+/* ---------- Reveal animation ----------
+   Gated on the .js class (set by an inline script in <head>) so that if JS is
+   disabled, blocked, or fails to load, all content stays visible by default. */
+.js [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
+.js [data-reveal].in { opacity: 1; transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
-  [data-reveal] { opacity: 1; transform: none; }
+  [data-reveal] { opacity: 1 !important; transform: none !important; }
   html { scroll-behavior: auto; }
 }
 
